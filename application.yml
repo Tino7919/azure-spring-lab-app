@@ -1,2 +1,7 @@
 application:
     message: Configured by Azure Spring Apps
+server:
+  # start services on random port by default
+  port: 0
+  # The stop processing uses a timeout which provides a grace period during which existing requests will be allowed to complete but no new requests will be permitted
+  shutdown: graceful
